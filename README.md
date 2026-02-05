@@ -115,3 +115,22 @@ MT25092_Part_C_RunExperiments.sh.
 | **Cache Misses (L1, LLC)** | Number of cache miss events at L1 and LLC levels     | Measured using `perf stat`                                      |
 | **Context Switches**       | Number of context switches during execution          | Measured using `perf stat`                                      |
 
+# Part C – Automated Experiment Script
+
+### Experiments are fully automated using:
+    bash 
+    sudo ./MT25092_Part_C_RunExperiments.sh
+
+### Script Functionality
+
+    Compiles and runs all implementations
+
+    Iterates over:
+
+      Message sizes: 64, 128, 256, 512 bytes
+
+      Thread counts: 1, 2, 4, 8
+
+    Profiles client execution using perf stat
+
+    Stores all results in a single CSV file
