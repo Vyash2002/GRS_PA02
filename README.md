@@ -134,3 +134,32 @@ MT25092_Part_C_RunExperiments.sh.
     Profiles client execution using perf stat
 
     Stores all results in a single CSV file
+    
+# Part D – Plotting and Visualization
+
+### Plots are generated using:
+    bash
+    python3 MT25092_Part_D_Plots.py
+
+### Generated Plots
+
+    MT25092_Througput_Analysis.png
+    MT25092_latency_analysis.png
+    MT25092_Efficiency_analysis.png
+    MT25092_Cache_analysis.png
+
+### Important Compliance Note
+
+    Plot values are hardcoded in the Python script
+
+    CSV files are not read for plotting
+
+    Plots match exactly with the values used in the report
+
+### System Configuration
+
+    OS: Ubuntu 22.04.5
+    Architecture: x86_64
+    Profiling Tool: perf
+    Language: C (client–server), Python (plotting)
+
