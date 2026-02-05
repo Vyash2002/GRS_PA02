@@ -24,18 +24,31 @@ The comparison is performed using application-level measurements and OS-level pr
 GRS_PA02/
   
   ├── makefile
+
   ├── MT25092_Part_A1_Client.c
+  
   ├── MT25092_Part_A1_Server.c
+  
   ├── MT25092_Part_A2_Client.c
+  
   ├── MT25092_Part_A2_Server.c
+  
   ├── MT25092_Part_A3_Client.c
+  
   ├── MT25092_Part_A3_Server.c
+  
   ├── MT25092_Part_C_RunExperiments.sh
+  
   ├── MT25092_Part_D_Plots.py
+  
   ├── MT25092_results.csv
+  
   ├── MT25092_Throughput_analysis.png
+  
   ├── MT25092_Latency_analysis.png
+  
   ├── MT25092_Cache_analysis.png
+  
   ├── MT25092_Cycle_per_Bytes.png
 
 # Part A – Socket Implementations
