@@ -11,10 +11,10 @@
 
 The objective of this assignment is to experimentally study the cost of data movement in network I/O by implementing and comparing:
 
-  A1: Two-copy socket communication (baseline)
+  ### A1: Two-copy socket communication (baseline)
 
-  A2: One-copy optimized socket communication
+  ### A2: One-copy optimized socket communication
 
-  A3: Zero-copy socket communication
+  ### A3: Zero-copy socket communication
 
 The comparison is performed using application-level measurements and OS-level profiling via the Linux perf tool.
