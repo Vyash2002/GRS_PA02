@@ -79,4 +79,39 @@ GRS_PA02/
 
     Client runs for a fixed duration
 
+# Part B: Profiling and Measurement
+### Objective
+
+The objective of Part B is to quantitatively evaluate and compare the performance of three network I/O implementations:
+
+    A1: Two-copy socket communication
+
+    A2: One-copy optimized communication
+
+    A3: Zero-copy communication
+
+The measurements focus on both application-level performance and micro-architectural behavior using the Linux perf tool.
+
+### Experimental Setup
+
+Platform: Linux (kernel 6.x)
+
+    Client–Server Model: TCP-based multithreaded application
+
+    Execution: Client and server run on the same host using separate processes
+
+    Duration per experiment: Fixed (5 seconds)
+
+    Threading: One thread per client connection
+
+Each experiment is executed automatically using the script
+MT25092_Part_C_RunExperiments.sh.
+
+| Metric                     | Description                                          | Measurement Method                                              |
+| -------------------------- | ---------------------------------------------------- | --------------------------------------------------------------- |
+| **Throughput (Gbps)**      | Amount of data transferred per second                | Computed at the application level using total bytes transferred |
+| **Latency (µs)**           | Average time taken per message transfer              | Computed at the application level                               |
+| **CPU Cycles**             | Total number of CPU cycles consumed during execution | Measured using `perf stat`                                      |
+| **Cache Misses (L1, LLC)** | Number of cache miss events at L1 and LLC levels     | Measured using `perf stat`                                      |
+| **Context Switches**       | Number of context switches during execution          | Measured using `perf stat`                                      |
 
